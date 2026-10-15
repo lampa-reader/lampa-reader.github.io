@@ -13,228 +13,11 @@
     appImage: 'Lampa-linux-x86_64.AppImage',
     deb: 'Lampa-linux-amd64.deb',
   };
-  const RU = {
-    whyKicker: 'Почему Lampa',
-    whyTitle: 'Читалка, которая не мешает читать',
-    tr1: 'Бесплатно',
-    tr2: 'Без рекламы',
-    tr3: 'Без аккаунта',
-    w1t: 'Бесплатно и без рекламы',
-    w1d: 'Читайте, отмечайте и синхронизируйте бесплатно. Без рекламы и без обязательного аккаунта — книги остаются у вас.',
-    w2t: 'Одна книга на всех устройствах',
-    w2d: 'Закрыли на телефоне — открыли на компьютере на той же странице. Закладки и заметки тоже.',
-    w3t: 'FB2, EPUB и TXT — как есть',
-    w3d: 'Без конвертации, с обложками и сносками. FB2 в ZIP тоже. Целую папку книг — разом.',
-    w4t: 'Удобно глазам',
-    w4d: 'Пять выверенных тем — от бумажной до чистого чёрного. Literata и ещё четыре шрифта для долгого чтения.',
-    w5t: 'Где брать книги',
-    w5d: '70 000 бесплатных книг Project Gutenberg прямо в приложении. Своя библиотека Calibre — по OPDS.',
-    p1a: 'Чтение, заметки и синхронизация — бесплатно',
-    p1b: 'Ни одной рекламы',
-    p1c: 'Аккаунт не нужен, книги на вашем устройстве',
-    p2: 'Та же страница на телефоне и компьютере',
-    fb2: 'с обложками и сносками',
-    fb2zip: 'распакуем сами',
-    epub: 'версии 2 и 3',
-    txt: 'простой текст',
-    p5: '70 000+ книг · Calibre по OPDS · папка целиком',
-    tourCta: 'Скачать Lampa бесплатно',
-    navFeatures: 'Возможности', navDownload: 'Скачать', navSupport: 'Поддержка',
-    pill: 'Новое: словарь и каталоги OPDS',
-    heroTitle: 'Спокойная читалка <br>для ваших книг',
-    heroLead: 'FB2, EPUB и TXT на iPhone, iPad, Mac, Windows и Linux. Место, заметки и списки сами переносятся между устройствами.',
-    heroUnder: 'Бесплатно · без рекламы · <a href="#download">другие платформы ↓</a>',
-    dlFor: 'Скачать для {os}',
-    storeTop: 'Загрузите в', playTop: 'Доступно в', soon: 'скоро',
-    featKicker: 'Возможности', featTitle: 'Всё для долгого чтения, ничего лишнего',
-    f1t: 'FB2 и EPUB без конвертации', f1d: 'Открывает книги как есть, вместе с обложками и сносками. ZIP с FB2 тоже.',
-    f2t: 'Место, заметки и списки — везде', f2d: 'Дочитали на телефоне, продолжили на планшете или компьютере с той же страницы.',
-    f3t: 'Закраски и заметки', f3d: 'Четыре цвета, заметки к фрагментам, переход по сноскам и обратно одним касанием.',
-    f4t: 'Словарь и перевод', f4d: 'Значение слова или перевод фразы прямо в книге. На iPhone перевод без интернета.',
-    f5t: 'Каталоги OPDS', f5d: 'Project Gutenberg и ваша библиотека Calibre — листайте и скачивайте прямо в приложении.',
-    f6t: '«Прочитано» и «Хочу прочитать»', f6d: 'Оценки, обложки и порядок — маленький Goodreads внутри читалки.',
-    thKicker: 'Для глаз', thTitle: 'Пять тем — на день, вечер и ночь', thSub: 'Контраст от 8:1 до 14:1, без режущего белого. Шрифты Literata, PT Serif и ещё три.',
-    thSample: 'Всё смешалось в доме Облонских.', th1: 'Бумага', th2: 'Сепия', th3: 'Шалфей', th4: 'Сумерки', th5: 'Ночь',
-    dlKicker: 'Скачать', dlTitle: 'Бесплатно на всех устройствах', dlVersion: 'Версия {v} · {date}', dlAll: 'Все версии',
-    macArm: 'Apple Silicon', macArmSub: '.dmg · M1 и новее', macIntel: 'Intel', macIntelSub: '.dmg',
-    winSetup: 'Установщик', winSetupSub: '.exe · Windows 10 и 11', winPortable: 'Портативная', winPortableSub: '.exe без установки',
-    appImage: 'AppImage', appImageSub: 'любой дистрибутив', deb: '.deb', debSub: 'Debian, Ubuntu',
-    get: 'Скачать', storesNote: 'iPhone и iPad — в App Store, Android — в Google Play.',
-    faqTitle: 'Частые вопросы',
-    q1: 'Это правда бесплатно?', a1: 'Да. Чтение, заметки, списки и синхронизация бесплатны. Позже появится подписка с большим облаком для книг, но всё, что есть сейчас, останется бесплатным.',
-    q2: 'Нужен ли аккаунт?', a2: 'Нет. Без входа всё хранится на устройстве. Аккаунт нужен только для синхронизации между устройствами.',
-    q3: 'Где хранятся мои книги?', a3: 'На вашем устройстве. Если вы вошли, файлы книг ещё и в закрытом облаке в ЕС — чтобы открыть книгу на другом устройстве.',
-    q4: 'Какие форматы?', a4: 'FB2, FB2.ZIP, EPUB и TXT. PDF пока нет.',
-    footSupport: 'Поддержка', footPrivacy: 'Конфиденциальность', footReleases: 'Все версии', footContact: 'Связаться', footBy: '© 2026 Владимир Зелинский',
-    supKicker: 'Поддержка', supTitle: 'Чем помочь?', supLead: 'Ответы на частые вопросы. Не нашли своего — напишите, отвечаю сам, обычно в течение дня.',
-    supWrite: 'Написать разработчику', supWriteSub: 'приложите версию из «Аккаунт и приложение»', supBtn: 'Написать',
-    privTitle: 'Политика конфиденциальности',
-  };
-  const FR = {
-    whyKicker: 'Pourquoi Lampa',
-    whyTitle: 'Une liseuse qui ne gêne pas la lecture',
-    tr1: 'Gratuit',
-    tr2: 'Sans publicité',
-    tr3: 'Sans compte',
-    w1t: 'Gratuit et sans publicité',
-    w1d: 'Lisez, surlignez et synchronisez gratuitement. Sans publicité ni compte obligatoire — vos livres restent chez vous.',
-    w2t: 'Un livre sur tous vos appareils',
-    w2d: 'Fermez-le sur le téléphone, rouvrez-le sur l’ordinateur à la même page. Signets et notes suivent aussi.',
-    w3t: 'FB2, EPUB et TXT tels quels',
-    w3d: 'Sans conversion, avec couvertures et notes. Le FB2 dans un ZIP aussi. Ajoutez tout un dossier d’un coup.',
-    w4t: 'Doux pour les yeux',
-    w4d: 'Cinq thèmes soignés, du papier au noir pur. Literata et quatre autres polices pensées pour les longues lectures.',
-    w5t: 'Où trouver des livres',
-    w5d: '70 000 livres gratuits de Project Gutenberg dans l’app. Votre bibliothèque Calibre via OPDS.',
-    p1a: 'Lecture, notes et synchro gratuites',
-    p1b: 'Aucune publicité',
-    p1c: 'Pas de compte, les livres restent sur votre appareil',
-    p2: 'La même page sur le téléphone et l’ordinateur',
-    fb2: 'avec couvertures et notes',
-    fb2zip: 'décompressé pour vous',
-    epub: 'versions 2 et 3',
-    txt: 'texte brut',
-    p5: '70 000+ livres · Calibre via OPDS · dossiers entiers',
-    tourCta: 'Obtenir Lampa gratuitement',
-    navFeatures: 'Fonctions', navDownload: 'Télécharger', navSupport: 'Aide',
-    pill: 'Nouveau : dictionnaire et catalogues OPDS',
-    heroTitle: 'Une liseuse paisible <br>pour vos propres livres',
-    heroLead: 'FB2, EPUB et TXT sur iPhone, iPad, Mac, Windows et Linux. Votre page, vos notes et vos listes vous suivent d’un appareil à l’autre.',
-    heroUnder: 'Gratuit · sans publicité · <a href="#download">autres plateformes ↓</a>',
-    dlFor: 'Télécharger pour {os}', storeTop: 'Télécharger dans l’', playTop: 'Disponible sur', soon: 'bientôt',
-    featKicker: 'Fonctions', featTitle: 'Tout pour la lecture au long cours, rien de superflu',
-    f1t: 'FB2 et EPUB sans conversion', f1d: 'Ouvre les livres tels quels, avec couvertures et notes. Le FB2 dans un ZIP aussi.',
-    f2t: 'Page, notes et listes partout', f2d: 'Arrêtez sur le téléphone, reprenez à la même page sur la tablette ou l’ordinateur.',
-    f3t: 'Surlignages et notes', f3d: 'Quatre couleurs, notes sur les passages, aller-retour vers les notes en un geste.',
-    f4t: 'Dictionnaire et traduction', f4d: 'Le sens d’un mot ou la traduction d’une phrase sans quitter le livre. Sur iPhone, la traduction marche hors ligne.',
-    f5t: 'Catalogues OPDS', f5d: 'Project Gutenberg et votre bibliothèque Calibre : parcourez et téléchargez dans l’app.',
-    f6t: '« Lus » et « À lire »', f6d: 'Notes, couvertures et ordre — un petit Goodreads dans la liseuse.',
-    thKicker: 'Pour les yeux', thTitle: 'Cinq thèmes pour le jour, le soir et la nuit', thSub: 'Contraste entre 8:1 et 14:1, sans blanc éblouissant. Literata, PT Serif et trois autres polices.',
-    thSample: 'Tout était sens dessus dessous chez les Oblonski.', th1: 'Papier', th2: 'Sépia', th3: 'Sauge', th4: 'Crépuscule', th5: 'Nuit',
-    dlKicker: 'Télécharger', dlTitle: 'Gratuit sur tous vos appareils', dlVersion: 'Version {v} · {date}', dlAll: 'Toutes les versions',
-    macArm: 'Apple Silicon', macArmSub: '.dmg · M1 et plus récents', macIntel: 'Intel', macIntelSub: '.dmg',
-    winSetup: 'Installateur', winSetupSub: '.exe · Windows 10 et 11', winPortable: 'Portable', winPortableSub: '.exe sans installation',
-    appImage: 'AppImage', appImageSub: 'toute distribution', deb: '.deb', debSub: 'Debian, Ubuntu',
-    get: 'Télécharger', storesNote: 'iPhone et iPad sur l’App Store, Android sur Google Play.',
-    faqTitle: 'Questions fréquentes',
-    q1: 'C’est vraiment gratuit ?', a1: 'Oui. Lecture, notes, listes et synchronisation sont gratuites. Un abonnement avec plus d’espace cloud viendra plus tard, mais tout ce qui existe aujourd’hui restera gratuit.',
-    q2: 'Faut-il un compte ?', a2: 'Non. Sans connexion, tout reste sur votre appareil. Un compte ne sert qu’à synchroniser vos appareils.',
-    q3: 'Où sont mes livres ?', a3: 'Sur votre appareil. Si vous êtes connecté, les fichiers sont aussi dans un espace cloud privé en UE, pour ouvrir le livre sur un autre appareil.',
-    q4: 'Quels formats ?', a4: 'FB2, FB2.ZIP, EPUB et TXT. Pas encore de PDF.',
-    footSupport: 'Aide', footPrivacy: 'Confidentialité', footReleases: 'Toutes les versions', footContact: 'Contact', footBy: '© 2026 Vladimir Zelinskyi',
-  };
-  const DE = {
-    whyKicker: 'Warum Lampa',
-    whyTitle: 'Ein Reader, der beim Lesen nicht stört',
-    tr1: 'Kostenlos',
-    tr2: 'Ohne Werbung',
-    tr3: 'Ohne Konto',
-    w1t: 'Kostenlos und ohne Werbung',
-    w1d: 'Lesen, markieren und synchronisieren – kostenlos. Ohne Werbung und ohne Kontopflicht – Ihre Bücher bleiben bei Ihnen.',
-    w2t: 'Ein Buch auf allen Geräten',
-    w2d: 'Am Handy schließen, am Computer auf derselben Seite weiterlesen. Lesezeichen und Notizen kommen mit.',
-    w3t: 'FB2, EPUB und TXT, wie sie sind',
-    w3d: 'Ohne Umwandeln, mit Covern und Fußnoten. FB2 im ZIP auch. Einen ganzen Ordner auf einmal hinzufügen.',
-    w4t: 'Angenehm für die Augen',
-    w4d: 'Fünf abgestimmte Themen, von Papier bis echtem Schwarz. Literata und vier weitere Schriften für langes Lesen.',
-    w5t: 'Woher die Bücher kommen',
-    w5d: '70.000 freie Bücher von Project Gutenberg direkt in der App. Ihre Calibre-Bibliothek per OPDS.',
-    p1a: 'Lesen, Notizen und Sync sind kostenlos',
-    p1b: 'Keine einzige Werbung',
-    p1c: 'Kein Konto nötig, Bücher bleiben auf dem Gerät',
-    p2: 'Dieselbe Seite auf Handy und Computer',
-    fb2: 'mit Covern und Fußnoten',
-    fb2zip: 'wird für Sie entpackt',
-    epub: 'Versionen 2 und 3',
-    txt: 'reiner Text',
-    p5: '70.000+ Bücher · Calibre per OPDS · ganze Ordner',
-    tourCta: 'Lampa kostenlos laden',
-    navFeatures: 'Funktionen', navDownload: 'Download', navSupport: 'Hilfe',
-    pill: 'Neu: Wörterbuch und OPDS-Kataloge',
-    heroTitle: 'Ein ruhiger Reader <br>für Ihre eigenen Bücher',
-    heroLead: 'FB2, EPUB und TXT auf iPhone, iPad, Mac, Windows und Linux. Lesestelle, Notizen und Listen wandern zwischen Ihren Geräten mit.',
-    heroUnder: 'Kostenlos · ohne Werbung · <a href="#download">andere Plattformen ↓</a>',
-    dlFor: 'Für {os} laden', storeTop: 'Laden im', playTop: 'Jetzt bei', soon: 'bald',
-    featKicker: 'Funktionen', featTitle: 'Alles für langes Lesen, nichts Überflüssiges',
-    f1t: 'FB2 und EPUB ohne Umwandeln', f1d: 'Öffnet Bücher, wie sie sind, mit Covern und Fußnoten. FB2 im ZIP auch.',
-    f2t: 'Lesestelle, Notizen und Listen überall', f2d: 'Am Handy aufhören, am Tablet oder Computer auf derselben Seite weiterlesen.',
-    f3t: 'Markierungen und Notizen', f3d: 'Vier Farben, Notizen zu Stellen, Fußnoten hin und zurück mit einem Tippen.',
-    f4t: 'Wörterbuch und Übersetzung', f4d: 'Bedeutung eines Wortes oder Übersetzung eines Satzes direkt im Buch. Auf dem iPhone offline.',
-    f5t: 'OPDS-Kataloge', f5d: 'Project Gutenberg und Ihre Calibre-Bibliothek: direkt in der App stöbern und laden.',
-    f6t: '„Gelesen“ und „Will ich lesen“', f6d: 'Bewertungen, Cover und Reihenfolge – ein kleines Goodreads im Reader.',
-    thKicker: 'Augenschonend', thTitle: 'Fünf Themen für Tag, Abend und Nacht', thSub: 'Kontrast zwischen 8:1 und 14:1, kein grelles Weiß. Literata, PT Serif und drei weitere Schriften.',
-    thSample: 'Im Hause Oblonski ging alles drunter und drüber.', th1: 'Papier', th2: 'Sepia', th3: 'Salbei', th4: 'Dämmerung', th5: 'Nacht',
-    dlKicker: 'Download', dlTitle: 'Kostenlos auf allen Geräten', dlVersion: 'Version {v} · {date}', dlAll: 'Alle Versionen',
-    macArm: 'Apple Silicon', macArmSub: '.dmg · M1 und neuer', macIntel: 'Intel', macIntelSub: '.dmg',
-    winSetup: 'Installer', winSetupSub: '.exe · Windows 10 und 11', winPortable: 'Portabel', winPortableSub: '.exe ohne Installation',
-    appImage: 'AppImage', appImageSub: 'jede Distribution', deb: '.deb', debSub: 'Debian, Ubuntu',
-    get: 'Laden', storesNote: 'iPhone und iPad im App Store, Android bei Google Play.',
-    faqTitle: 'Häufige Fragen',
-    q1: 'Ist das wirklich kostenlos?', a1: 'Ja. Lesen, Notizen, Listen und Synchronisierung sind kostenlos. Später kommt ein Abo mit mehr Cloud-Speicher, aber alles, was es jetzt gibt, bleibt kostenlos.',
-    q2: 'Brauche ich ein Konto?', a2: 'Nein. Ohne Anmeldung bleibt alles auf dem Gerät. Ein Konto braucht es nur zum Synchronisieren.',
-    q3: 'Wo liegen meine Bücher?', a3: 'Auf Ihrem Gerät. Wenn Sie angemeldet sind, liegen die Dateien zusätzlich in privatem Cloud-Speicher in der EU – für das Öffnen auf anderen Geräten.',
-    q4: 'Welche Formate?', a4: 'FB2, FB2.ZIP, EPUB und TXT. PDF noch nicht.',
-    footSupport: 'Hilfe', footPrivacy: 'Datenschutz', footReleases: 'Alle Versionen', footContact: 'Kontakt', footBy: '© 2026 Vladimir Zelinskyi',
-  };
-  const ES = {
-    whyKicker: 'Por qué Lampa',
-    whyTitle: 'Un lector que no estorba la lectura',
-    tr1: 'Gratis',
-    tr2: 'Sin anuncios',
-    tr3: 'Sin cuenta',
-    w1t: 'Gratis y sin anuncios',
-    w1d: 'Lee, subraya y sincroniza gratis. Sin anuncios ni cuenta obligatoria: tus libros se quedan contigo.',
-    w2t: 'Un libro en todos tus dispositivos',
-    w2d: 'Ciérralo en el móvil y ábrelo en el ordenador en la misma página. Marcadores y notas también.',
-    w3t: 'FB2, EPUB y TXT tal cual',
-    w3d: 'Sin convertir, con portadas y notas al pie. FB2 dentro de ZIP también. Añade una carpeta entera de una vez.',
-    w4t: 'Cómodo para la vista',
-    w4d: 'Cinco temas cuidados, del papel al negro puro. Literata y cuatro fuentes más pensadas para leer mucho rato.',
-    w5t: 'De dónde sacar libros',
-    w5d: '70.000 libros gratis de Project Gutenberg dentro de la app. Tu biblioteca Calibre por OPDS.',
-    p1a: 'Leer, anotar y sincronizar es gratis',
-    p1b: 'Ni un solo anuncio',
-    p1c: 'Sin cuenta: los libros se quedan en tu dispositivo',
-    p2: 'La misma página en el móvil y el ordenador',
-    fb2: 'con portadas y notas',
-    fb2zip: 'lo descomprimimos',
-    epub: 'versiones 2 y 3',
-    txt: 'texto plano',
-    p5: '70.000+ libros · Calibre por OPDS · carpetas enteras',
-    tourCta: 'Descargar Lampa gratis',
-    navFeatures: 'Funciones', navDownload: 'Descargar', navSupport: 'Ayuda',
-    pill: 'Nuevo: diccionario y catálogos OPDS',
-    heroTitle: 'Un lector tranquilo <br>para sus propios libros',
-    heroLead: 'FB2, EPUB y TXT en iPhone, iPad, Mac, Windows y Linux. Su página, notas y listas le siguen entre dispositivos.',
-    heroUnder: 'Gratis · sin anuncios · <a href="#download">otras plataformas ↓</a>',
-    dlFor: 'Descargar para {os}', storeTop: 'Descárgalo en el', playTop: 'Disponible en', soon: 'pronto',
-    featKicker: 'Funciones', featTitle: 'Todo para leer largo, nada de más',
-    f1t: 'FB2 y EPUB sin convertir', f1d: 'Abre los libros tal cual, con portadas y notas al pie. FB2 dentro de ZIP también.',
-    f2t: 'Página, notas y listas en todas partes', f2d: 'Deje de leer en el móvil y siga en la tableta o el ordenador desde la misma página.',
-    f3t: 'Subrayados y notas', f3d: 'Cuatro colores, notas a pasajes, ir y volver de las notas al pie con un toque.',
-    f4t: 'Diccionario y traducción', f4d: 'El significado de una palabra o la traducción de una frase sin salir del libro. En iPhone, sin conexión.',
-    f5t: 'Catálogos OPDS', f5d: 'Project Gutenberg y su biblioteca de Calibre: explore y descargue dentro de la app.',
-    f6t: '«Leídos» y «Quiero leer»', f6d: 'Valoraciones, portadas y orden: un pequeño Goodreads dentro del lector.',
-    thKicker: 'Para la vista', thTitle: 'Cinco temas para el día, la tarde y la noche', thSub: 'Contraste entre 8:1 y 14:1, sin blanco que deslumbre. Literata, PT Serif y tres fuentes más.',
-    thSample: 'En casa de los Oblonski andaba todo trastornado.', th1: 'Papel', th2: 'Sepia', th3: 'Salvia', th4: 'Crepúsculo', th5: 'Noche',
-    dlKicker: 'Descargar', dlTitle: 'Gratis en todos sus dispositivos', dlVersion: 'Versión {v} · {date}', dlAll: 'Todas las versiones',
-    macArm: 'Apple Silicon', macArmSub: '.dmg · M1 y posteriores', macIntel: 'Intel', macIntelSub: '.dmg',
-    winSetup: 'Instalador', winSetupSub: '.exe · Windows 10 y 11', winPortable: 'Portátil', winPortableSub: '.exe sin instalar',
-    appImage: 'AppImage', appImageSub: 'cualquier distribución', deb: '.deb', debSub: 'Debian, Ubuntu',
-    get: 'Descargar', storesNote: 'iPhone y iPad en el App Store, Android en Google Play.',
-    faqTitle: 'Preguntas frecuentes',
-    q1: '¿De verdad es gratis?', a1: 'Sí. Leer, las notas, las listas y la sincronización son gratis. Más adelante habrá una suscripción con más espacio en la nube, pero todo lo que existe ahora seguirá siendo gratis.',
-    q2: '¿Necesito una cuenta?', a2: 'No. Sin iniciar sesión todo se queda en su dispositivo. La cuenta solo sirve para sincronizar.',
-    q3: '¿Dónde se guardan mis libros?', a3: 'En su dispositivo. Si inicia sesión, los archivos también se guardan en una nube privada en la UE, para abrir el libro en otro dispositivo.',
-    q4: '¿Qué formatos?', a4: 'FB2, FB2.ZIP, EPUB y TXT. PDF todavía no.',
-    footSupport: 'Ayuda', footPrivacy: 'Privacidad', footReleases: 'Todas las versiones', footContact: 'Contacto', footBy: '© 2026 Vladimir Zelinskyi',
-  };
-  const EN = {};
-  const L = { ru: RU, fr: FR, de: DE, es: ES };
+  const L = window.LAMPA_I18N;
   const LANGS = ['en', 'ru', 'fr', 'de', 'es'];
   const LOCALES = { en: 'en-GB', ru: 'ru-RU', fr: 'fr-FR', de: 'de-DE', es: 'es-ES' };
+  const lang = LANGS.includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
   const tr = (key, fallback) => (lang !== 'en' && L[lang][key] != null ? L[lang][key] : fallback);
-  let lang = 'en';
 
   function detectOs() {
     const ua = navigator.userAgent || '';
@@ -263,25 +46,10 @@
     for (const b of document.querySelectorAll('.why-item')) b.addEventListener('click', () => { whyFeat = b.dataset.feat; renderTour(); });
   }
   function apply() {
-    document.documentElement.lang = lang;
-    document.documentElement.dataset.lang = lang;
-    for (const img of document.querySelectorAll('img[data-shot]')) img.src = `shots/${lang === 'ru' ? 'ru' : 'en'}-${img.dataset.shot}.webp`;
-    renderTour();
-    for (const n of document.querySelectorAll('[data-t]')) {
-      const key = n.dataset.t;
-      if (!(key in EN)) EN[key] = n.innerHTML;
-      const v = tr(key, EN[key]);
-      if (v != null) n.innerHTML = v;
-    }
-    for (const b of document.querySelectorAll('.lang button')) b.classList.toggle('on', b.dataset.lang === lang);
-    const docs = document.querySelectorAll('.doc section[lang]');
-    const has = Array.from(docs).some((d) => d.lang === lang);
-    for (const d of docs) d.hidden = d.lang !== (has ? lang : 'en');
     for (const n of document.querySelectorAll('.store.soon')) n.dataset.soon = tr('soon', 'soon');
     hero();
     version();
   }
-
   function hero() {
     const os = detectOs();
     const btn = document.getElementById('hero-dl');
@@ -326,13 +94,8 @@
     out.textContent = tr('dlVersion', 'Version {v} · {date}').replace('{v}', release.tag_name.replace(/^v/, '')).replace('{date}', date) + ' · ';
   }
 
-  function init() {
-    for (const r of document.querySelectorAll('.dl-row')) r.href = fileUrl(FILES[r.dataset.file]);
-    for (const a of document.querySelectorAll('[data-store]')) {
-      const url = CONFIG[a.dataset.store];
-      if (url) a.href = url;
-      else a.classList.add('soon');
-    }
+  function redirectToLang() {
+    if (lang !== 'en') return false;
     let saved = null;
     try {
       saved = localStorage.getItem('lampa-site-lang');
@@ -340,14 +103,25 @@
     const q = new URLSearchParams(location.search).get('lang');
     const nav = (navigator.language || 'en').toLowerCase();
     const guess = /^(ru|uk|be|kk)/.test(nav) ? 'ru' : LANGS.find((l) => nav.startsWith(l)) || 'en';
-    lang = LANGS.includes(q) ? q : LANGS.includes(saved) ? saved : guess;
-    for (const b of document.querySelectorAll('.lang button')) {
-      b.addEventListener('click', () => {
-        lang = b.dataset.lang;
+    const want = LANGS.includes(q) ? q : LANGS.includes(saved) ? saved : guess;
+    if (want === 'en') return false;
+    const page = location.pathname.split('/').pop();
+    location.replace(`${want}/${page}${location.hash}`);
+    return true;
+  }
+  function init() {
+    for (const r of document.querySelectorAll('.dl-row')) r.href = fileUrl(FILES[r.dataset.file]);
+    for (const a of document.querySelectorAll('[data-store]')) {
+      const url = CONFIG[a.dataset.store];
+      if (url) a.href = url;
+      else a.classList.add('soon');
+    }
+    if (redirectToLang()) return;
+    for (const a of document.querySelectorAll('.lang a')) {
+      a.addEventListener('click', () => {
         try {
-          localStorage.setItem('lampa-site-lang', lang);
+          localStorage.setItem('lampa-site-lang', a.dataset.lang);
         } catch {}
-        apply();
       });
     }
     bindTour();

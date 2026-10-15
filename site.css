@@ -52,8 +52,8 @@ img { max-width: 100%; }
 .nav-links { display: flex; gap: 26px; }
 .nav-links a { color: var(--fg); font-size: 15px; }
 .lang { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 9px; }
-.lang button { padding: 3px 7px; border: none; border-radius: 6px; background: none; color: var(--muted); font: 700 13px var(--sans); cursor: pointer; }
-.lang button.on { background: var(--panel); color: var(--fg); }
+.lang a { display: block; text-decoration: none; padding: 3px 7px; border: none; border-radius: 6px; background: none; color: var(--muted); font: 700 13px var(--sans); cursor: pointer; }
+.lang a.on { background: var(--panel); color: var(--fg); }
 
 .hero .wrap { display: flex; align-items: center; gap: 48px; padding-top: 80px; padding-bottom: 72px; }
 .hero-text { flex: 1; min-width: 0; }
@@ -257,7 +257,7 @@ h2 { margin: 8px 0 26px; font: 700 clamp(26px, 3.2vw, 34px)/1.2 var(--serif); ov
 @media (max-width: 380px) {
   .brand { font-size: 19px; gap: 8px; }
   .brand img { width: 28px; height: 28px; }
-  .lang button { padding: 3px 5px; font-size: 12px; }
+  .lang a { padding: 3px 5px; font-size: 12px; }
   .nav .wrap { padding: 0 14px; }
 }
 .doc section .kicker { margin-bottom: 0; }
