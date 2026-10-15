@@ -14,6 +14,22 @@
     deb: 'Lampa-linux-amd64.deb',
   };
   const RU = {
+    tourKicker: 'Внутри приложения',
+    tourTitle: 'Посмотрите, прежде чем скачать',
+    tourSub: 'Настоящие экраны из приложения для iPhone. На iPad и компьютере всё то же, только просторнее.',
+    t1t: 'Ваша полка, а не магазин',
+    t1d: 'Обложки, прогресс и быстрые фильтры. Целую папку книг можно добавить разом.',
+    t2t: 'Закраски в четыре цвета',
+    t2d: 'Выделите фрагмент, чтобы отметить его, добавить заметку, перевести или скопировать.',
+    t3t: 'Значение слова — не уходя со страницы',
+    t3d: 'Нажмите на слово, и словарь объяснит его, даже если оно в другой форме.',
+    t4t: 'Настройте под себя',
+    t4d: 'Пять выверенных тем, шрифты для чтения, размер и межстрочный интервал.',
+    t5t: 'Настоящий чёрный для ночи',
+    t5d: 'Мягкий текст на чистом чёрном: глазам спокойно, а OLED-экраны экономят заряд.',
+    t6t: '70 000 бесплатных книг внутри',
+    t6d: 'Project Gutenberg встроен, а свою библиотеку Calibre можно подключить по OPDS.',
+    tourCta: 'Скачать Lampa бесплатно',
     navFeatures: 'Возможности', navDownload: 'Скачать', navSupport: 'Поддержка',
     pill: 'Новое: словарь и каталоги OPDS',
     heroTitle: 'Спокойная читалка <br>для ваших книг',
@@ -46,6 +62,22 @@
     privTitle: 'Политика конфиденциальности',
   };
   const FR = {
+    tourKicker: 'Dans l’application',
+    tourTitle: 'Voyez-la avant de la télécharger',
+    tourSub: 'De vrais écrans de l’app iPhone. Sur iPad et ordinateur, c’est pareil, en plus spacieux.',
+    t1t: 'Votre étagère, pas une boutique',
+    t1d: 'Couvertures, progression et filtres rapides. Ajoutez tout un dossier de livres d’un coup.',
+    t2t: 'Surlignez en quatre couleurs',
+    t2d: 'Sélectionnez un passage pour le marquer, l’annoter, le traduire ou le copier.',
+    t3t: 'Le sens sans quitter la page',
+    t3d: 'Touchez un mot : le dictionnaire l’explique, même conjugué ou accordé.',
+    t4t: 'À votre goût',
+    t4d: 'Cinq thèmes soignés, des polices de lecture, la taille et l’interligne.',
+    t5t: 'Un vrai noir pour la nuit',
+    t5d: 'Texte doux sur noir pur : reposant pour les yeux et économe sur écran OLED.',
+    t6t: '70 000 livres gratuits inclus',
+    t6d: 'Project Gutenberg est intégré, et votre bibliothèque Calibre se connecte via OPDS.',
+    tourCta: 'Obtenir Lampa gratuitement',
     navFeatures: 'Fonctions', navDownload: 'Télécharger', navSupport: 'Aide',
     pill: 'Nouveau : dictionnaire et catalogues OPDS',
     heroTitle: 'Une liseuse paisible <br>pour vos propres livres',
@@ -74,6 +106,22 @@
     footSupport: 'Aide', footPrivacy: 'Confidentialité', footReleases: 'Toutes les versions', footContact: 'Contact', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const DE = {
+    tourKicker: 'In der App',
+    tourTitle: 'Erst ansehen, dann laden',
+    tourSub: 'Echte Bildschirme aus der iPhone-App. Auf iPad und Computer sieht es genauso aus, nur geräumiger.',
+    t1t: 'Ihr Regal, kein Shop',
+    t1d: 'Cover, Fortschritt und schnelle Filter. Einen ganzen Ordner voller Bücher auf einmal hinzufügen.',
+    t2t: 'Markieren in vier Farben',
+    t2d: 'Eine Stelle auswählen, um sie zu markieren, zu notieren, zu übersetzen oder zu kopieren.',
+    t3t: 'Bedeutung, ohne die Seite zu verlassen',
+    t3d: 'Wort antippen, und das Wörterbuch erklärt es, auch in gebeugter Form.',
+    t4t: 'Ganz nach Ihrem Geschmack',
+    t4d: 'Fünf abgestimmte Themen, Lese-Schriften, Größe und Zeilenabstand.',
+    t5t: 'Echtes Schwarz für die Nacht',
+    t5d: 'Sanfter Text auf reinem Schwarz: angenehm für die Augen und sparsam auf OLED.',
+    t6t: '70.000 freie Bücher inklusive',
+    t6d: 'Project Gutenberg ist eingebaut, Ihre eigene Calibre-Bibliothek verbinden Sie per OPDS.',
+    tourCta: 'Lampa kostenlos laden',
     navFeatures: 'Funktionen', navDownload: 'Download', navSupport: 'Hilfe',
     pill: 'Neu: Wörterbuch und OPDS-Kataloge',
     heroTitle: 'Ein ruhiger Reader <br>für Ihre eigenen Bücher',
@@ -102,6 +150,22 @@
     footSupport: 'Hilfe', footPrivacy: 'Datenschutz', footReleases: 'Alle Versionen', footContact: 'Kontakt', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const ES = {
+    tourKicker: 'Dentro de la app',
+    tourTitle: 'Mírala antes de descargarla',
+    tourSub: 'Pantallas reales de la app para iPhone. En iPad y ordenador es igual, pero con más espacio.',
+    t1t: 'Tu estantería, no una tienda',
+    t1d: 'Portadas, progreso y filtros rápidos. Añade una carpeta entera de libros de una vez.',
+    t2t: 'Subraya en cuatro colores',
+    t2d: 'Selecciona un pasaje para marcarlo, anotarlo, traducirlo o copiarlo.',
+    t3t: 'El significado sin salir de la página',
+    t3d: 'Toca una palabra y el diccionario la explica, aunque esté conjugada o en plural.',
+    t4t: 'A tu manera',
+    t4d: 'Cinco temas cuidados, fuentes de lectura, tamaño e interlineado.',
+    t5t: 'Negro puro para la noche',
+    t5d: 'Texto suave sobre negro puro: descansa la vista y ahorra batería en OLED.',
+    t6t: '70.000 libros gratis dentro',
+    t6d: 'Project Gutenberg viene integrado y tu biblioteca Calibre se conecta por OPDS.',
+    tourCta: 'Descargar Lampa gratis',
     navFeatures: 'Funciones', navDownload: 'Descargar', navSupport: 'Ayuda',
     pill: 'Nuevo: diccionario y catálogos OPDS',
     heroTitle: 'Un lector tranquilo <br>para sus propios libros',
@@ -153,6 +217,7 @@
     document.documentElement.lang = lang;
     document.documentElement.dataset.lang = lang;
     for (const img of document.querySelectorAll('img[data-shot]')) img.src = `shots/${lang === 'ru' ? 'ru' : 'en'}-${img.dataset.shot}.webp`;
+    for (const img of document.querySelectorAll('img[data-fshot]')) img.src = `shots/f/${lang === 'ru' ? 'ru' : 'en'}-${img.dataset.fshot}.webp`;
     for (const n of document.querySelectorAll('[data-t]')) {
       const key = n.dataset.t;
       if (!(key in EN)) EN[key] = n.innerHTML;

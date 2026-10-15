@@ -145,6 +145,24 @@ h2 { margin: 8px 0 26px; font: 700 clamp(26px, 3.2vw, 34px)/1.2 var(--serif); ov
 .help .card p { font-size: 16px; line-height: 1.6; }
 .help .card h3 { margin-top: 0; font-size: 19px; }
 
+.tour .sub { max-width: 640px; }
+.tour-track { display: grid; grid-auto-flow: column; grid-auto-columns: 248px; gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 max(32px, calc((100vw - 1176px) / 2)); padding: 8px max(32px, calc((100vw - 1176px) / 2)) 28px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.shot { margin: 0; scroll-snap-align: start; }
+.shot .frame { padding: 8px; border-radius: 38px; background: #111; box-shadow: 0 22px 44px rgb(40 30 20 / 0.18); }
+.shot img { display: block; width: 100%; height: auto; border-radius: 30px; background: #f8f5ee; }
+.shot h3 { margin: 18px 0 6px; font: 700 19px/1.3 var(--serif); }
+.shot p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.tour-cta { display: flex; justify-content: center; padding-top: 8px; }
+@media (prefers-color-scheme: dark) {
+  .shot .frame { background: #3a3632; box-shadow: inset 0 0 0 1px #5a544c, 0 22px 44px rgb(0 0 0 / 0.4); }
+}
+@media (min-width: 1240px) {
+  .tour-track { grid-auto-flow: row; grid-template-columns: repeat(6, 1fr); grid-auto-columns: auto; max-width: 1240px; margin: 0 auto; gap: 24px; overflow: visible; padding: 8px 32px 28px; }
+}
+@media (max-width: 640px) {
+  .tour-track { grid-auto-columns: 72vw; gap: 18px; }
+}
+
 @media (max-width: 1100px) {
   .hero .wrap { gap: 24px; }
   .devices { transform: scale(0.82); transform-origin: right center; margin-left: -115px; }
