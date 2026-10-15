@@ -14,23 +14,30 @@
     deb: 'Lampa-linux-amd64.deb',
   };
   const RU = {
-    tourAll: 'Mac · Windows · Linux · iPhone · iPad — одна библиотека на всех',
-    tourDesk: 'Компьютер',
-    tourKicker: 'Внутри приложения',
-    tourTitle: 'Посмотрите, прежде чем скачать',
-    tourSub: 'Настоящие экраны из приложения, без макетов. Выберите своё устройство.',
-    t1t: 'Ваша полка, а не магазин',
-    t1d: 'Обложки, прогресс и быстрые фильтры. Целую папку книг можно добавить разом.',
-    t2t: 'Закраски и заметки',
-    t2d: 'Выделите фрагмент, чтобы отметить его, добавить заметку, перевести или скопировать.',
-    t3t: 'Значение слова — не уходя со страницы',
-    t3d: 'Нажмите на слово, и словарь объяснит его, даже если оно в другой форме.',
-    t4t: 'Темы и шрифты',
-    t4d: 'Пять выверенных тем, шрифты для чтения, размер и межстрочный интервал.',
-    t5t: 'Настоящий чёрный для ночи',
-    t5d: 'Мягкий текст на чистом чёрном: глазам спокойно, а OLED-экраны экономят заряд.',
-    t6t: '70 000 бесплатных книг внутри',
-    t6d: 'Project Gutenberg встроен, а свою библиотеку Calibre можно подключить по OPDS.',
+    whyKicker: 'Почему Lampa',
+    whyTitle: 'Читалка, которая не мешает читать',
+    tr1: 'Бесплатно',
+    tr2: 'Без рекламы',
+    tr3: 'Без аккаунта',
+    w1t: 'Бесплатно и без рекламы',
+    w1d: 'Читайте, отмечайте и синхронизируйте бесплатно. Без рекламы и без обязательного аккаунта — книги остаются у вас.',
+    w2t: 'Одна книга на всех устройствах',
+    w2d: 'Закрыли на телефоне — открыли на компьютере на той же странице. Закладки и заметки тоже.',
+    w3t: 'FB2, EPUB и TXT — как есть',
+    w3d: 'Без конвертации, с обложками и сносками. FB2 в ZIP тоже. Целую папку книг — разом.',
+    w4t: 'Удобно глазам',
+    w4d: 'Пять выверенных тем — от бумажной до чистого чёрного. Literata и ещё четыре шрифта для долгого чтения.',
+    w5t: 'Где брать книги',
+    w5d: '70 000 бесплатных книг Project Gutenberg прямо в приложении. Своя библиотека Calibre — по OPDS.',
+    p1a: 'Чтение, заметки и синхронизация — бесплатно',
+    p1b: 'Ни одной рекламы',
+    p1c: 'Аккаунт не нужен, книги на вашем устройстве',
+    p2: 'Та же страница на телефоне и компьютере',
+    fb2: 'с обложками и сносками',
+    fb2zip: 'распакуем сами',
+    epub: 'версии 2 и 3',
+    txt: 'простой текст',
+    p5: '70 000+ книг · Calibre по OPDS · папка целиком',
     tourCta: 'Скачать Lampa бесплатно',
     navFeatures: 'Возможности', navDownload: 'Скачать', navSupport: 'Поддержка',
     pill: 'Новое: словарь и каталоги OPDS',
@@ -64,23 +71,30 @@
     privTitle: 'Политика конфиденциальности',
   };
   const FR = {
-    tourAll: 'Mac · Windows · Linux · iPhone · iPad — une seule bibliothèque partout',
-    tourDesk: 'Ordinateur',
-    tourKicker: 'Dans l’application',
-    tourTitle: 'Voyez-la avant de la télécharger',
-    tourSub: 'De vrais écrans de l’app, sans maquettes. Choisissez votre appareil.',
-    t1t: 'Votre étagère, pas une boutique',
-    t1d: 'Couvertures, progression et filtres rapides. Ajoutez tout un dossier de livres d’un coup.',
-    t2t: 'Surlignez en quatre couleurs',
-    t2d: 'Sélectionnez un passage pour le marquer, l’annoter, le traduire ou le copier.',
-    t3t: 'Le sens sans quitter la page',
-    t3d: 'Touchez un mot : le dictionnaire l’explique, même conjugué ou accordé.',
-    t4t: 'À votre goût',
-    t4d: 'Cinq thèmes soignés, des polices de lecture, la taille et l’interligne.',
-    t5t: 'Un vrai noir pour la nuit',
-    t5d: 'Texte doux sur noir pur : reposant pour les yeux et économe sur écran OLED.',
-    t6t: '70 000 livres gratuits inclus',
-    t6d: 'Project Gutenberg est intégré, et votre bibliothèque Calibre se connecte via OPDS.',
+    whyKicker: 'Pourquoi Lampa',
+    whyTitle: 'Une liseuse qui ne gêne pas la lecture',
+    tr1: 'Gratuit',
+    tr2: 'Sans publicité',
+    tr3: 'Sans compte',
+    w1t: 'Gratuit et sans publicité',
+    w1d: 'Lisez, surlignez et synchronisez gratuitement. Sans publicité ni compte obligatoire — vos livres restent chez vous.',
+    w2t: 'Un livre sur tous vos appareils',
+    w2d: 'Fermez-le sur le téléphone, rouvrez-le sur l’ordinateur à la même page. Signets et notes suivent aussi.',
+    w3t: 'FB2, EPUB et TXT tels quels',
+    w3d: 'Sans conversion, avec couvertures et notes. Le FB2 dans un ZIP aussi. Ajoutez tout un dossier d’un coup.',
+    w4t: 'Doux pour les yeux',
+    w4d: 'Cinq thèmes soignés, du papier au noir pur. Literata et quatre autres polices pensées pour les longues lectures.',
+    w5t: 'Où trouver des livres',
+    w5d: '70 000 livres gratuits de Project Gutenberg dans l’app. Votre bibliothèque Calibre via OPDS.',
+    p1a: 'Lecture, notes et synchro gratuites',
+    p1b: 'Aucune publicité',
+    p1c: 'Pas de compte, les livres restent sur votre appareil',
+    p2: 'La même page sur le téléphone et l’ordinateur',
+    fb2: 'avec couvertures et notes',
+    fb2zip: 'décompressé pour vous',
+    epub: 'versions 2 et 3',
+    txt: 'texte brut',
+    p5: '70 000+ livres · Calibre via OPDS · dossiers entiers',
     tourCta: 'Obtenir Lampa gratuitement',
     navFeatures: 'Fonctions', navDownload: 'Télécharger', navSupport: 'Aide',
     pill: 'Nouveau : dictionnaire et catalogues OPDS',
@@ -110,23 +124,30 @@
     footSupport: 'Aide', footPrivacy: 'Confidentialité', footReleases: 'Toutes les versions', footContact: 'Contact', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const DE = {
-    tourAll: 'Mac · Windows · Linux · iPhone · iPad — eine Bibliothek für alle',
-    tourDesk: 'Computer',
-    tourKicker: 'In der App',
-    tourTitle: 'Erst ansehen, dann laden',
-    tourSub: 'Echte Bildschirme aus der App, keine Entwürfe. Wählen Sie Ihr Gerät.',
-    t1t: 'Ihr Regal, kein Shop',
-    t1d: 'Cover, Fortschritt und schnelle Filter. Einen ganzen Ordner voller Bücher auf einmal hinzufügen.',
-    t2t: 'Markieren in vier Farben',
-    t2d: 'Eine Stelle auswählen, um sie zu markieren, zu notieren, zu übersetzen oder zu kopieren.',
-    t3t: 'Bedeutung, ohne die Seite zu verlassen',
-    t3d: 'Wort antippen, und das Wörterbuch erklärt es, auch in gebeugter Form.',
-    t4t: 'Ganz nach Ihrem Geschmack',
-    t4d: 'Fünf abgestimmte Themen, Lese-Schriften, Größe und Zeilenabstand.',
-    t5t: 'Echtes Schwarz für die Nacht',
-    t5d: 'Sanfter Text auf reinem Schwarz: angenehm für die Augen und sparsam auf OLED.',
-    t6t: '70.000 freie Bücher inklusive',
-    t6d: 'Project Gutenberg ist eingebaut, Ihre eigene Calibre-Bibliothek verbinden Sie per OPDS.',
+    whyKicker: 'Warum Lampa',
+    whyTitle: 'Ein Reader, der beim Lesen nicht stört',
+    tr1: 'Kostenlos',
+    tr2: 'Ohne Werbung',
+    tr3: 'Ohne Konto',
+    w1t: 'Kostenlos und ohne Werbung',
+    w1d: 'Lesen, markieren und synchronisieren – kostenlos. Ohne Werbung und ohne Kontopflicht – Ihre Bücher bleiben bei Ihnen.',
+    w2t: 'Ein Buch auf allen Geräten',
+    w2d: 'Am Handy schließen, am Computer auf derselben Seite weiterlesen. Lesezeichen und Notizen kommen mit.',
+    w3t: 'FB2, EPUB und TXT, wie sie sind',
+    w3d: 'Ohne Umwandeln, mit Covern und Fußnoten. FB2 im ZIP auch. Einen ganzen Ordner auf einmal hinzufügen.',
+    w4t: 'Angenehm für die Augen',
+    w4d: 'Fünf abgestimmte Themen, von Papier bis echtem Schwarz. Literata und vier weitere Schriften für langes Lesen.',
+    w5t: 'Woher die Bücher kommen',
+    w5d: '70.000 freie Bücher von Project Gutenberg direkt in der App. Ihre Calibre-Bibliothek per OPDS.',
+    p1a: 'Lesen, Notizen und Sync sind kostenlos',
+    p1b: 'Keine einzige Werbung',
+    p1c: 'Kein Konto nötig, Bücher bleiben auf dem Gerät',
+    p2: 'Dieselbe Seite auf Handy und Computer',
+    fb2: 'mit Covern und Fußnoten',
+    fb2zip: 'wird für Sie entpackt',
+    epub: 'Versionen 2 und 3',
+    txt: 'reiner Text',
+    p5: '70.000+ Bücher · Calibre per OPDS · ganze Ordner',
     tourCta: 'Lampa kostenlos laden',
     navFeatures: 'Funktionen', navDownload: 'Download', navSupport: 'Hilfe',
     pill: 'Neu: Wörterbuch und OPDS-Kataloge',
@@ -156,23 +177,30 @@
     footSupport: 'Hilfe', footPrivacy: 'Datenschutz', footReleases: 'Alle Versionen', footContact: 'Kontakt', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const ES = {
-    tourAll: 'Mac · Windows · Linux · iPhone · iPad — una biblioteca para todos',
-    tourDesk: 'Ordenador',
-    tourKicker: 'Dentro de la app',
-    tourTitle: 'Mírala antes de descargarla',
-    tourSub: 'Pantallas reales de la app, sin maquetas. Elige tu dispositivo.',
-    t1t: 'Tu estantería, no una tienda',
-    t1d: 'Portadas, progreso y filtros rápidos. Añade una carpeta entera de libros de una vez.',
-    t2t: 'Subraya en cuatro colores',
-    t2d: 'Selecciona un pasaje para marcarlo, anotarlo, traducirlo o copiarlo.',
-    t3t: 'El significado sin salir de la página',
-    t3d: 'Toca una palabra y el diccionario la explica, aunque esté conjugada o en plural.',
-    t4t: 'A tu manera',
-    t4d: 'Cinco temas cuidados, fuentes de lectura, tamaño e interlineado.',
-    t5t: 'Negro puro para la noche',
-    t5d: 'Texto suave sobre negro puro: descansa la vista y ahorra batería en OLED.',
-    t6t: '70.000 libros gratis dentro',
-    t6d: 'Project Gutenberg viene integrado y tu biblioteca Calibre se conecta por OPDS.',
+    whyKicker: 'Por qué Lampa',
+    whyTitle: 'Un lector que no estorba la lectura',
+    tr1: 'Gratis',
+    tr2: 'Sin anuncios',
+    tr3: 'Sin cuenta',
+    w1t: 'Gratis y sin anuncios',
+    w1d: 'Lee, subraya y sincroniza gratis. Sin anuncios ni cuenta obligatoria: tus libros se quedan contigo.',
+    w2t: 'Un libro en todos tus dispositivos',
+    w2d: 'Ciérralo en el móvil y ábrelo en el ordenador en la misma página. Marcadores y notas también.',
+    w3t: 'FB2, EPUB y TXT tal cual',
+    w3d: 'Sin convertir, con portadas y notas al pie. FB2 dentro de ZIP también. Añade una carpeta entera de una vez.',
+    w4t: 'Cómodo para la vista',
+    w4d: 'Cinco temas cuidados, del papel al negro puro. Literata y cuatro fuentes más pensadas para leer mucho rato.',
+    w5t: 'De dónde sacar libros',
+    w5d: '70.000 libros gratis de Project Gutenberg dentro de la app. Tu biblioteca Calibre por OPDS.',
+    p1a: 'Leer, anotar y sincronizar es gratis',
+    p1b: 'Ni un solo anuncio',
+    p1c: 'Sin cuenta: los libros se quedan en tu dispositivo',
+    p2: 'La misma página en el móvil y el ordenador',
+    fb2: 'con portadas y notas',
+    fb2zip: 'lo descomprimimos',
+    epub: 'versiones 2 y 3',
+    txt: 'texto plano',
+    p5: '70.000+ libros · Calibre por OPDS · carpetas enteras',
     tourCta: 'Descargar Lampa gratis',
     navFeatures: 'Funciones', navDownload: 'Descargar', navSupport: 'Ayuda',
     pill: 'Nuevo: diccionario y catálogos OPDS',
@@ -221,45 +249,18 @@
 
   const fileUrl = (name) => `https://github.com/${CONFIG.repo}/releases/latest/download/${name}`;
 
-  const TOUR = { device: 'desktop', feat: 'library' };
+  let whyFeat = 'free';
   function renderTour() {
-    const body = document.querySelector('.tour-body');
-    if (!body) return;
     const set = lang === 'ru' ? 'ru' : 'en';
-    const items = [...body.querySelectorAll('.tour-item')];
-    const feats = items.filter((b) => !(TOUR.device === 'desktop' && b.dataset.feat === 'dict')).map((b) => b.dataset.feat);
-    if (!feats.includes(TOUR.feat)) TOUR.feat = feats[0];
-    body.dataset.device = TOUR.device;
-    for (const b of document.querySelectorAll('.tour-seg button')) b.setAttribute('aria-pressed', String(b.dataset.device === TOUR.device));
-    for (const b of items) {
-      b.hidden = !feats.includes(b.dataset.feat);
-      b.setAttribute('aria-pressed', String(b.dataset.feat === TOUR.feat));
-    }
-    const at = feats.indexOf(TOUR.feat);
-    const src = (device, feat) => `shots/tour/${set}-${device}-${feat}.webp`;
-    const shots = {
-      desktop: src('desktop', TOUR.feat),
-      tablet: src('tablet', TOUR.feat),
-      phone: src('phone', TOUR.feat),
-      'phone-prev': src('phone', feats[(at + feats.length - 1) % feats.length]),
-      'phone-next': src('phone', feats[(at + 1) % feats.length]),
-    };
-    const active = body.querySelector(`.tour-item[data-feat="${TOUR.feat}"] b`);
-    for (const img of body.querySelectorAll('img[data-stage]')) {
-      const next = shots[img.dataset.stage];
+    for (const img of document.querySelectorAll('.why img[data-shot]')) {
+      const next = `shots/tour/${set}-${img.dataset.shot}.webp`;
       if (!img.src.endsWith(next)) img.src = next;
-      img.alt = img.classList.contains('side') ? '' : `Lampa — ${active ? active.textContent : ''}`;
     }
+    for (const b of document.querySelectorAll('.why-item')) b.setAttribute('aria-pressed', String(b.dataset.feat === whyFeat));
+    for (const sc of document.querySelectorAll('.why-scene')) sc.hidden = sc.dataset.scene !== whyFeat;
   }
   function bindTour() {
-    for (const b of document.querySelectorAll('.tour-seg button')) b.addEventListener('click', () => { TOUR.device = b.dataset.device; renderTour(); });
-    for (const b of document.querySelectorAll('.tour-item')) b.addEventListener('click', () => { TOUR.feat = b.dataset.feat; renderTour(); });
-    for (const img of document.querySelectorAll('.dev-phones .side')) img.addEventListener('click', () => {
-      const feats = [...document.querySelectorAll('.tour-item:not([hidden])')].map((b) => b.dataset.feat);
-      const at = feats.indexOf(TOUR.feat);
-      TOUR.feat = feats[(at + (img.dataset.stage === 'phone-next' ? 1 : feats.length - 1)) % feats.length];
-      renderTour();
-    });
+    for (const b of document.querySelectorAll('.why-item')) b.addEventListener('click', () => { whyFeat = b.dataset.feat; renderTour(); });
   }
   function apply() {
     document.documentElement.lang = lang;
