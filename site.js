@@ -14,16 +14,18 @@
     deb: 'Lampa-linux-amd64.deb',
   };
   const RU = {
+    tourAll: 'Mac · Windows · Linux · iPhone · iPad — одна библиотека на всех',
+    tourDesk: 'Компьютер',
     tourKicker: 'Внутри приложения',
     tourTitle: 'Посмотрите, прежде чем скачать',
-    tourSub: 'Настоящие экраны из приложения для iPhone. На iPad и компьютере всё то же, только просторнее.',
+    tourSub: 'Настоящие экраны из приложения, без макетов. Выберите своё устройство.',
     t1t: 'Ваша полка, а не магазин',
     t1d: 'Обложки, прогресс и быстрые фильтры. Целую папку книг можно добавить разом.',
-    t2t: 'Закраски в четыре цвета',
+    t2t: 'Закраски и заметки',
     t2d: 'Выделите фрагмент, чтобы отметить его, добавить заметку, перевести или скопировать.',
     t3t: 'Значение слова — не уходя со страницы',
     t3d: 'Нажмите на слово, и словарь объяснит его, даже если оно в другой форме.',
-    t4t: 'Настройте под себя',
+    t4t: 'Темы и шрифты',
     t4d: 'Пять выверенных тем, шрифты для чтения, размер и межстрочный интервал.',
     t5t: 'Настоящий чёрный для ночи',
     t5d: 'Мягкий текст на чистом чёрном: глазам спокойно, а OLED-экраны экономят заряд.',
@@ -62,9 +64,11 @@
     privTitle: 'Политика конфиденциальности',
   };
   const FR = {
+    tourAll: 'Mac · Windows · Linux · iPhone · iPad — une seule bibliothèque partout',
+    tourDesk: 'Ordinateur',
     tourKicker: 'Dans l’application',
     tourTitle: 'Voyez-la avant de la télécharger',
-    tourSub: 'De vrais écrans de l’app iPhone. Sur iPad et ordinateur, c’est pareil, en plus spacieux.',
+    tourSub: 'De vrais écrans de l’app, sans maquettes. Choisissez votre appareil.',
     t1t: 'Votre étagère, pas une boutique',
     t1d: 'Couvertures, progression et filtres rapides. Ajoutez tout un dossier de livres d’un coup.',
     t2t: 'Surlignez en quatre couleurs',
@@ -106,9 +110,11 @@
     footSupport: 'Aide', footPrivacy: 'Confidentialité', footReleases: 'Toutes les versions', footContact: 'Contact', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const DE = {
+    tourAll: 'Mac · Windows · Linux · iPhone · iPad — eine Bibliothek für alle',
+    tourDesk: 'Computer',
     tourKicker: 'In der App',
     tourTitle: 'Erst ansehen, dann laden',
-    tourSub: 'Echte Bildschirme aus der iPhone-App. Auf iPad und Computer sieht es genauso aus, nur geräumiger.',
+    tourSub: 'Echte Bildschirme aus der App, keine Entwürfe. Wählen Sie Ihr Gerät.',
     t1t: 'Ihr Regal, kein Shop',
     t1d: 'Cover, Fortschritt und schnelle Filter. Einen ganzen Ordner voller Bücher auf einmal hinzufügen.',
     t2t: 'Markieren in vier Farben',
@@ -150,9 +156,11 @@
     footSupport: 'Hilfe', footPrivacy: 'Datenschutz', footReleases: 'Alle Versionen', footContact: 'Kontakt', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const ES = {
+    tourAll: 'Mac · Windows · Linux · iPhone · iPad — una biblioteca para todos',
+    tourDesk: 'Ordenador',
     tourKicker: 'Dentro de la app',
     tourTitle: 'Mírala antes de descargarla',
-    tourSub: 'Pantallas reales de la app para iPhone. En iPad y ordenador es igual, pero con más espacio.',
+    tourSub: 'Pantallas reales de la app, sin maquetas. Elige tu dispositivo.',
     t1t: 'Tu estantería, no una tienda',
     t1d: 'Portadas, progreso y filtros rápidos. Añade una carpeta entera de libros de una vez.',
     t2t: 'Subraya en cuatro colores',
@@ -213,11 +221,51 @@
 
   const fileUrl = (name) => `https://github.com/${CONFIG.repo}/releases/latest/download/${name}`;
 
+  const TOUR = { device: 'desktop', feat: 'library' };
+  function renderTour() {
+    const body = document.querySelector('.tour-body');
+    if (!body) return;
+    const set = lang === 'ru' ? 'ru' : 'en';
+    const items = [...body.querySelectorAll('.tour-item')];
+    const feats = items.filter((b) => !(TOUR.device === 'desktop' && b.dataset.feat === 'dict')).map((b) => b.dataset.feat);
+    if (!feats.includes(TOUR.feat)) TOUR.feat = feats[0];
+    body.dataset.device = TOUR.device;
+    for (const b of document.querySelectorAll('.tour-seg button')) b.setAttribute('aria-pressed', String(b.dataset.device === TOUR.device));
+    for (const b of items) {
+      b.hidden = !feats.includes(b.dataset.feat);
+      b.setAttribute('aria-pressed', String(b.dataset.feat === TOUR.feat));
+    }
+    const at = feats.indexOf(TOUR.feat);
+    const src = (device, feat) => `shots/tour/${set}-${device}-${feat}.webp`;
+    const shots = {
+      desktop: src('desktop', TOUR.feat),
+      tablet: src('tablet', TOUR.feat),
+      phone: src('phone', TOUR.feat),
+      'phone-prev': src('phone', feats[(at + feats.length - 1) % feats.length]),
+      'phone-next': src('phone', feats[(at + 1) % feats.length]),
+    };
+    const active = body.querySelector(`.tour-item[data-feat="${TOUR.feat}"] b`);
+    for (const img of body.querySelectorAll('img[data-stage]')) {
+      const next = shots[img.dataset.stage];
+      if (!img.src.endsWith(next)) img.src = next;
+      img.alt = img.classList.contains('side') ? '' : `Lampa — ${active ? active.textContent : ''}`;
+    }
+  }
+  function bindTour() {
+    for (const b of document.querySelectorAll('.tour-seg button')) b.addEventListener('click', () => { TOUR.device = b.dataset.device; renderTour(); });
+    for (const b of document.querySelectorAll('.tour-item')) b.addEventListener('click', () => { TOUR.feat = b.dataset.feat; renderTour(); });
+    for (const img of document.querySelectorAll('.dev-phones .side')) img.addEventListener('click', () => {
+      const feats = [...document.querySelectorAll('.tour-item:not([hidden])')].map((b) => b.dataset.feat);
+      const at = feats.indexOf(TOUR.feat);
+      TOUR.feat = feats[(at + (img.dataset.stage === 'phone-next' ? 1 : feats.length - 1)) % feats.length];
+      renderTour();
+    });
+  }
   function apply() {
     document.documentElement.lang = lang;
     document.documentElement.dataset.lang = lang;
     for (const img of document.querySelectorAll('img[data-shot]')) img.src = `shots/${lang === 'ru' ? 'ru' : 'en'}-${img.dataset.shot}.webp`;
-    for (const img of document.querySelectorAll('img[data-fshot]')) img.src = `shots/f/${lang === 'ru' ? 'ru' : 'en'}-${img.dataset.fshot}.webp`;
+    renderTour();
     for (const n of document.querySelectorAll('[data-t]')) {
       const key = n.dataset.t;
       if (!(key in EN)) EN[key] = n.innerHTML;
@@ -301,6 +349,7 @@
         apply();
       });
     }
+    bindTour();
     apply();
   }
 
