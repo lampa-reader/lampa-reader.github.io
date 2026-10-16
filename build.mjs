@@ -3,7 +3,8 @@ import vm from 'node:vm';
 
 const BASE = 'https://lampa-reader.github.io/';
 const LANGS = ['en', 'ru', 'fr', 'de', 'es'];
-const PAGES = { index: 'Index', support: 'Support', privacy: 'Privacy' };
+const PAGES = { index: 'Index', support: 'Support', privacy: 'Privacy', 'email-confirmed': 'Confirmed' };
+const NOINDEX = new Set(['email-confirmed']);
 const LOCALE = { en: 'en_GB', ru: 'ru_RU', fr: 'fr_FR', de: 'de_DE', es: 'es_ES' };
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync('i18n.js', 'utf8'), ctx);
@@ -38,6 +39,7 @@ function build(lang, page) {
   const head = [
     `  <title>${title}</title>`,
     `  <meta name="description" content="${desc}">`,
+    ...(NOINDEX.has(page) ? ['  <meta name="robots" content="noindex">'] : []),
     `  <link rel="canonical" href="${url(lang, page)}">`,
     alts,
     `  <link rel="alternate" hreflang="x-default" href="${url('en', page)}">`,
@@ -64,7 +66,7 @@ function build(lang, page) {
 for (const lang of LANGS) for (const page of Object.keys(PAGES)) build(lang, page);
 
 const sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'];
-for (const page of Object.keys(PAGES)) {
+for (const page of Object.keys(PAGES).filter((p) => !NOINDEX.has(p))) {
   for (const lang of LANGS) {
     sm.push(`  <url>\n    <loc>${url(lang, page)}</loc>`);
     for (const l of LANGS) sm.push(`    <xhtml:link rel="alternate" hreflang="${l}" href="${url(l, page)}"/>`);

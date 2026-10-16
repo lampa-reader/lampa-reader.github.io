@@ -106,7 +106,10 @@
     const want = LANGS.includes(q) ? q : LANGS.includes(saved) ? saved : guess;
     if (want === 'en') return false;
     const page = location.pathname.split('/').pop();
-    location.replace(`${want}/${page}${location.hash}`);
+    const keep = new URLSearchParams(location.search);
+    keep.delete('lang');
+    const qs = keep.toString();
+    location.replace(`${want}/${page}${qs ? `?${qs}` : ''}${location.hash}`);
     return true;
   }
   function init() {
@@ -115,6 +118,15 @@
       const url = CONFIG[a.dataset.store];
       if (url) a.href = url;
       else a.classList.add('soon');
+    }
+    if (document.body.dataset.page === 'confirmed') {
+      const params = new URLSearchParams(location.search);
+      if (/error/.test(location.hash)) params.set('expired', '1');
+      const qs = params.toString();
+      history.replaceState(null, '', location.pathname + (qs ? `?${qs}` : ''));
+      const failed = params.has('expired');
+      for (const n of document.querySelectorAll('.confirm-ok')) n.hidden = failed;
+      for (const n of document.querySelectorAll('.confirm-fail')) n.hidden = !failed;
     }
     if (redirectToLang()) return;
     for (const a of document.querySelectorAll('.lang a')) {

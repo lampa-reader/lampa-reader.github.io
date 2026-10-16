@@ -1,6 +1,8 @@
 (function () {
   'use strict';
   const EN = {
+    metaConfirmedTitle: 'Lampa — Email confirmed',
+    metaConfirmedDesc: 'Your Lampa account is ready.',
     metaIndexTitle: 'Lampa — free FB2 & EPUB reader for Mac, Windows, Linux, iPhone and iPad',
     metaIndexDesc: 'A calm, free book reader with no ads. Opens FB2, EPUB and TXT as they are and keeps your page, notes and lists in sync across your devices.',
     metaSupportTitle: 'Lampa — Support',
@@ -9,6 +11,8 @@
     metaPrivacyDesc: 'What data Lampa handles and where it goes. No ads, no analytics, no tracking.',
   };
   const RU = {
+    metaConfirmedTitle: 'Lampa — почта подтверждена',
+    metaConfirmedDesc: 'Аккаунт Lampa готов.',
     metaIndexTitle: 'Lampa — бесплатная читалка FB2 и EPUB для Mac, Windows, Linux, iPhone и iPad',
     metaIndexDesc: 'Спокойная бесплатная читалка без рекламы. Открывает FB2, EPUB и TXT как есть и синхронизирует место чтения, заметки и списки между устройствами.',
     metaSupportTitle: 'Lampa — поддержка',
@@ -72,6 +76,8 @@
     privTitle: 'Политика конфиденциальности',
   };
   const FR = {
+    metaConfirmedTitle: 'Lampa — Adresse e-mail confirmée',
+    metaConfirmedDesc: 'Votre compte Lampa est prêt.',
     metaIndexTitle: 'Lampa — liseuse FB2 et EPUB gratuite pour Mac, Windows, Linux, iPhone et iPad',
     metaIndexDesc: 'Une liseuse calme et gratuite, sans publicité. Ouvre FB2, EPUB et TXT tels quels et synchronise votre page, vos notes et vos listes entre vos appareils.',
     metaSupportTitle: 'Lampa — Assistance',
@@ -131,6 +137,8 @@
     footSupport: 'Aide', footPrivacy: 'Confidentialité', footReleases: 'Toutes les versions', footContact: 'Contact', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const DE = {
+    metaConfirmedTitle: 'Lampa — E-Mail bestätigt',
+    metaConfirmedDesc: 'Ihr Lampa-Konto ist bereit.',
     metaIndexTitle: 'Lampa — kostenloser FB2- und EPUB-Reader für Mac, Windows, Linux, iPhone und iPad',
     metaIndexDesc: 'Ein ruhiger, kostenloser Reader ohne Werbung. Öffnet FB2, EPUB und TXT, wie sie sind, und synchronisiert Seite, Notizen und Listen zwischen Ihren Geräten.',
     metaSupportTitle: 'Lampa — Hilfe',
@@ -190,6 +198,8 @@
     footSupport: 'Hilfe', footPrivacy: 'Datenschutz', footReleases: 'Alle Versionen', footContact: 'Kontakt', footBy: '© 2026 Vladimir Zelinskyi',
   };
   const ES = {
+    metaConfirmedTitle: 'Lampa — Correo confirmado',
+    metaConfirmedDesc: 'Tu cuenta de Lampa está lista.',
     metaIndexTitle: 'Lampa — lector FB2 y EPUB gratis para Mac, Windows, Linux, iPhone y iPad',
     metaIndexDesc: 'Un lector tranquilo y gratuito, sin anuncios. Abre FB2, EPUB y TXT tal cual y sincroniza tu página, notas y listas entre dispositivos.',
     metaSupportTitle: 'Lampa — Ayuda',
