@@ -3,8 +3,8 @@ import vm from 'node:vm';
 
 const BASE = 'https://lampa-reader.github.io/';
 const LANGS = ['en', 'ru', 'fr', 'de', 'es'];
-const PAGES = { index: 'Index', support: 'Support', privacy: 'Privacy', 'email-confirmed': 'Confirmed' };
-const NOINDEX = new Set(['email-confirmed']);
+const PAGES = { index: 'Index', support: 'Support', privacy: 'Privacy', 'email-confirmed': 'Confirmed', 'signed-in': 'SignedIn' };
+const NOINDEX = new Set(['email-confirmed', 'signed-in']);
 const LOCALE = { en: 'en_GB', ru: 'ru_RU', fr: 'fr_FR', de: 'de_DE', es: 'es_ES' };
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync('i18n.js', 'utf8'), ctx);

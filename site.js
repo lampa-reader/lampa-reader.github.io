@@ -129,6 +129,18 @@
       for (const n of document.querySelectorAll('.confirm-fail')) n.hidden = !failed;
     }
     if (redirectToLang()) return;
+    if (document.body.dataset.page === 'signed-in') {
+      const params = new URLSearchParams(location.search + (location.hash ? '&' + location.hash.slice(1) : ''));
+      const ok = params.has('code') && !params.has('error');
+      for (const n of document.querySelectorAll('.confirm-ok')) n.hidden = !ok;
+      for (const n of document.querySelectorAll('.confirm-fail')) n.hidden = ok;
+      if (ok) {
+        const target = 'lampa://auth-callback?code=' + encodeURIComponent(params.get('code'));
+        for (const a of document.querySelectorAll('.open-app')) a.href = target;
+        history.replaceState(null, '', location.pathname);
+        location.href = target;
+      }
+    }
     for (const a of document.querySelectorAll('.lang a')) {
       a.addEventListener('click', () => {
         try {

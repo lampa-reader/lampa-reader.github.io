@@ -3,6 +3,8 @@
   const EN = {
     metaConfirmedTitle: 'Lampa — Email confirmed',
     metaConfirmedDesc: 'Your Lampa account is ready.',
+    metaSignedInTitle: 'Lampa — Signed in',
+    metaSignedInDesc: 'You’re signed in to Lampa.',
     metaIndexTitle: 'Lampa — free FB2 & EPUB reader for Mac, Windows, Linux, iPhone and iPad',
     metaIndexDesc: 'A calm, free book reader with no ads. Opens FB2, EPUB and TXT as they are and keeps your page, notes and lists in sync across your devices.',
     metaSupportTitle: 'Lampa — Support',
@@ -13,6 +15,8 @@
   const RU = {
     metaConfirmedTitle: 'Lampa — почта подтверждена',
     metaConfirmedDesc: 'Аккаунт Lampa готов.',
+    metaSignedInTitle: 'Lampa — вход выполнен',
+    metaSignedInDesc: 'Вы вошли в Lampa.',
     metaIndexTitle: 'Lampa — бесплатная читалка FB2 и EPUB для Mac, Windows, Linux, iPhone и iPad',
     metaIndexDesc: 'Спокойная бесплатная читалка без рекламы. Открывает FB2, EPUB и TXT как есть и синхронизирует место чтения, заметки и списки между устройствами.',
     metaSupportTitle: 'Lampa — поддержка',
@@ -78,6 +82,8 @@
   const FR = {
     metaConfirmedTitle: 'Lampa — Adresse e-mail confirmée',
     metaConfirmedDesc: 'Votre compte Lampa est prêt.',
+    metaSignedInTitle: 'Lampa — Connecté',
+    metaSignedInDesc: 'Vous êtes connecté à Lampa.',
     metaIndexTitle: 'Lampa — liseuse FB2 et EPUB gratuite pour Mac, Windows, Linux, iPhone et iPad',
     metaIndexDesc: 'Une liseuse calme et gratuite, sans publicité. Ouvre FB2, EPUB et TXT tels quels et synchronise votre page, vos notes et vos listes entre vos appareils.',
     metaSupportTitle: 'Lampa — Assistance',
@@ -139,6 +145,8 @@
   const DE = {
     metaConfirmedTitle: 'Lampa — E-Mail bestätigt',
     metaConfirmedDesc: 'Ihr Lampa-Konto ist bereit.',
+    metaSignedInTitle: 'Lampa — Angemeldet',
+    metaSignedInDesc: 'Sie sind bei Lampa angemeldet.',
     metaIndexTitle: 'Lampa — kostenloser FB2- und EPUB-Reader für Mac, Windows, Linux, iPhone und iPad',
     metaIndexDesc: 'Ein ruhiger, kostenloser Reader ohne Werbung. Öffnet FB2, EPUB und TXT, wie sie sind, und synchronisiert Seite, Notizen und Listen zwischen Ihren Geräten.',
     metaSupportTitle: 'Lampa — Hilfe',
@@ -200,6 +208,8 @@
   const ES = {
     metaConfirmedTitle: 'Lampa — Correo confirmado',
     metaConfirmedDesc: 'Tu cuenta de Lampa está lista.',
+    metaSignedInTitle: 'Lampa — Sesión iniciada',
+    metaSignedInDesc: 'Has iniciado sesión en Lampa.',
     metaIndexTitle: 'Lampa — lector FB2 y EPUB gratis para Mac, Windows, Linux, iPhone y iPad',
     metaIndexDesc: 'Un lector tranquilo y gratuito, sin anuncios. Abre FB2, EPUB y TXT tal cual y sincroniza tu página, notas y listas entre dispositivos.',
     metaSupportTitle: 'Lampa — Ayuda',
